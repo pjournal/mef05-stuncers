@@ -8,13 +8,10 @@ My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, fr
 ## **UseR! 2021 - One Stop Solution **
   Google normalizes the maximum value of your search query to 100 but when you compare your search query to another topic, your query may go lower volume and expand time scale, the query is may go quite lower. 
   So, instead of looking at the search volume as Google Trends do, transform them to search score. There are object which you looking for and control keywords that should mirror standard usage of internet in a given location. You also can analyze internationalization of  given topic, subject or person.
-  
-  
-  
- If you want to download, compute, visualize, storage as a SQLLite file and export from Google Trends, here is the "globaltrends" package. 
+      
+ If you want to download, compute, visualize, storage as a SQLLite file and export from Google Trends, here is the "globaltrends" package: [Click](https://github.com/ha-pu/globaltrends) 
 
-
-```markdown
+Watch: [Click](https://www.youtube.com/watch?v=Kkjkny94dgU&list=PL4IzsxWztPdmHhzrXDAOpq4zS_peAVty2&index=6)
 
 Syntax highlighted code block
 
