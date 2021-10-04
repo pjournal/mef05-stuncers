@@ -5,7 +5,7 @@ My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, fr
    
    **Contact me** : [Linkedin](https://www.linkedin.com/in/suat-tuncer-7aa831a6/)
    
-## **UseR! 2021 - One Stop Solution **
+## **_UseR! 2021 - One Stop Solution_**
   Google normalizes the maximum value of your search query to 100 but when you compare your search query to another topic, your query may go lower volume and expand time scale, the query is may go quite lower. 
   So, instead of looking at the search volume as Google Trends do, transform them to search score. There are object which you looking for and control keywords that should mirror standard usage of internet in a given location. You also can analyze internationalization of  given topic, subject or person.
       
