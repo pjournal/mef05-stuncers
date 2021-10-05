@@ -1,3 +1,10 @@
+---
+title: "RMarkdown Progress Journal"
+author: "Suat Tuncer"
+output: html_document
+---
+
+
 ### About Me
  
 My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, free diving, and cryptocurrencies. I graduated from Yeditepe University, International Trade and Business in 2020. I am an active trader and I have been trading cryptocurrencies.
