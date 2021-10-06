@@ -35,7 +35,7 @@ Adding 2 more explanatory variables to the model for trying to get more explanat
 Check for code and more: [Click](https://www.r-bloggers.com/2012/03/futures-price-prediction-using-the-order-book-data/)
  
  
- ## **_Which Implied Volatility Ratio Is Best?_**
+ ### **_Which Implied Volatility Ratio Is Best?_**
  The author is using R to decide which implied volatility ratio is best. He is comparing a volatility signal using three different variations of implied volatility indices to predict when to enter a short volatility position. After he makes the arrangement in code, he is visualising his code and getting reasonable output about it. The volatility signals descriptions are linked below. 
  Post: [Click](https://quantstrattrader.com/2018/01/24/which-implied-volatility-ratio-is-best/)
  Cboe Volatility Indexes: [Click](https://www.projectoption.com/volatility-index-vxst-vix-vxv-vxmt/)
