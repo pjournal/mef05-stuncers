@@ -15,34 +15,14 @@ My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, fr
 ## **_UseR! 2021 - One Stop Solution_**
   Google normalizes the maximum value of your search query to 100 but when you compare your search query to another topic, your query may go lower volume and expand time scale, the query is may go quite lower. 
   So, instead of looking at the search volume as Google Trends do, transform them to search score. There are object which you looking for and control keywords that should mirror standard usage of internet in a given location. You also can analyze internationalization of  given topic, subject or person.
+  
       
  If you want to download, compute, visualize, storage as a SQLLite file and export from Google Trends, here is the "globaltrends" package: [Click](https://github.com/ha-pu/globaltrends) 
 
 Watch: [Click](https://www.youtube.com/watch?v=Kkjkny94dgU&list=PL4IzsxWztPdmHhzrXDAOpq4zS_peAVty2&index=6)
 
-Syntax highlighted code block
+## **_R Posts Related to My Interests_**
 
-# Header 1
-## Header 2
-### Header 3
+### Twitter Sentiment Analysis and Visualization using R
+ 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pjournal/gh-pages-template/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
