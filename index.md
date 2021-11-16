@@ -9,7 +9,7 @@ output: html_document
  
 My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, free diving, and cryptocurrencies. I graduated from Yeditepe University, International Trade and Business in 2020. I am an active trader and I have been trading cryptocurrencies.
    After I realized, I can enhance myself in analytic, as a trader, I decided to apply for this program. I have a strong willingness to be a successful data analyst in a team of cryptocurrency.
-   I also am a member of R Ninjas : [https://pjournal.github.io/mef05g-rninjas/]
+   I also am a member of [R Ninjas] : (https://pjournal.github.io/mef05g-rninjas/)
    **Contact me** : [Linkedin](https://www.linkedin.com/in/suat-tuncer-7aa831a6/)
    
 ## **_UseR! 2021 - One Stop Solution_**
