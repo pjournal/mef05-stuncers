@@ -22,5 +22,12 @@ My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, fr
   [Assignment 2: İzmir Fish Price](İzmir_Fish_Price_Analysis.html)
 
 
+### Week 4
+Netflix
+
+
 ### Week 5
 [Assignment 3: İzmir Fish Price ShinyApp](https://mef05g-rninjas.shinyapps.io/Fish_Price/)
+
+
+### [R Ninjas Group Project](https://pjournal.github.io/mef05g-rninjas/)
