@@ -23,11 +23,12 @@ My name is Suat Tuncer and I'm from Çanakkale. I am interested in kite-surf, fr
 
 
 ### Week 4
-Netflix
+[Assignment 3: Netflix_Analysis](Netflix.html)
+
 
 
 ### Week 5
-[Assignment 3: İzmir Fish Price ShinyApp](https://mef05g-rninjas.shinyapps.io/Fish_Price/)
+[Assignment 4: İzmir Fish Price ShinyApp](https://mef05g-rninjas.shinyapps.io/Fish_Price/)
 
 
 ### Final
