@@ -1,0 +1,66 @@
+<hr>
+<p>title: &quot;Netflix&quot;
+author: &quot;Suat Tuncer&quot;</p>
+<h2 id="output-html_document">output: html_document</h2>
+<p>```{r, include = FALSE}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(knitr)
+library(scales)</p>
+<pre><code>### The Data
+df &lt;- read_csv(<span class="hljs-string">"C:\\Users\\suatk\\Desktop\\netflix_titles.csv"</span>)
+
+### Summarry <span class="hljs-keyword">of</span> Data
+
+```{r, message = FALSE}
+
+str(df)
+</code></pre><h5 id="selecting-neccesary-clomns">Selecting Neccesary Clomns</h5>
+<p>```{r, message = FALSE}
+df_filtered &lt;- df %&gt;% select(type,title,director,cast,country,release_year,rating,duration,listed_in)
+df_filtered</p>
+<pre><code>
+##### Filtring Turkey
+
+```{r}
+df_tr &lt;- df_filtered %&gt;% subset(., grepl(<span class="hljs-string">"Turkey"</span>, country))
+</code></pre><h5 id="t-rlerin-ayr-t-r-lmas-">Türlerin ayrıştırılması</h5>
+<pre><code class="lang-{r}">df_tr_plot &lt;-  df_tr %&gt;% 
+  mutate(listed_in = strsplit(as.<span class="hljs-keyword">character</span>(listed_in), <span class="hljs-string">","</span>)) %&gt;% 
+  unnest(listed_in) %&gt;% <span class="hljs-keyword">select</span>(listed_in) %&gt;% group_by(list_in = trimws(listed_in)) %&gt;% summarise(total = n())
+
+
+
+ggplot(df_tr_plot, aes(x = <span class="hljs-keyword">reorder</span>(list_in, -total), y= total) ) +
+  geom_bar(stat=<span class="hljs-string">'identity'</span>)+theme(axis.<span class="hljs-keyword">text</span>.x = element_text(<span class="hljs-keyword">angle</span>=<span class="hljs-number">45</span>))
+</code></pre>
+<h4 id="international-movies-have-most-produced-in-turkey-in-netflix-">International Movies have most produced in Turkey in Netflix.</h4>
+<h3 id="filtring-international-movies-on-turkey">Filtring International Movies on Turkey</h3>
+<pre><code class="lang-{r}">int_movies&lt;- df_tr%&gt;%subset(., grepl(<span class="hljs-string">"International Movies"</span>, listed_in))
+
+int_movies
+</code></pre>
+<h4 id="directors-of-international-movies">Directors of International Movies</h4>
+<pre><code class="lang-{r}">df_int_plot &lt;-  int_movies %&gt;% 
+  mutate(director = strsplit(as.<span class="hljs-keyword">character</span>(director), <span class="hljs-string">","</span>)) %&gt;% 
+  unnest(director) %&gt;% <span class="hljs-keyword">select</span>(director) %&gt;% group_by(director = trimws(director)) %&gt;% summarise(total = n())
+
+
+
+ggplot(df_int_plot, aes (x = <span class="hljs-keyword">reorder</span>(director, -total), y = total))+
+  geom_bar(stat=<span class="hljs-string">'identity'</span>)+theme(axis.<span class="hljs-keyword">text</span>.x = element_text(<span class="hljs-keyword">angle</span>=<span class="hljs-number">45</span>))
+</code></pre>
+<h4 id="actors-and-actresses-in-international-movies">Actors and Actresses in International Movies</h4>
+<pre><code class="lang-{r}">df_int_cast_plot &lt;-  int_movies %&gt;% 
+  mutate(cast = strsplit(as.<span class="hljs-keyword">character</span>(cast), <span class="hljs-string">","</span>)) %&gt;% 
+  unnest(cast) %&gt;% <span class="hljs-keyword">select</span>(cast) %&gt;% group_by(cast = trimws(cast)) %&gt;% summarise(total = n())%&gt;%arrange(desc(total))%&gt;%head(<span class="hljs-number">20</span>)
+
+df_int_cast_plot
+ggplot(df_int_cast_plot, aes (x = <span class="hljs-keyword">reorder</span>(cast, -total), y = total))+
+  geom_bar(stat=<span class="hljs-string">'identity'</span>)+theme(axis.<span class="hljs-keyword">text</span>.x = element_text(<span class="hljs-keyword">angle</span>=<span class="hljs-number">45</span>))
+</code></pre>
+<h6 id="thanks-for-reading">Thanks for Reading</h6>
+<h6 id="you-can-go-back-to-main-page-https-pjournal-github-io-mef05-stuncers-">You can go back to <a href="https://pjournal.github.io/mef05-stuncers/">main page</a></h6>
