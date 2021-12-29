@@ -30,4 +30,7 @@ Netflix
 [Assignment 3: İzmir Fish Price ShinyApp](https://mef05g-rninjas.shinyapps.io/Fish_Price/)
 
 
-### [R Ninjas Group Project](https://pjournal.github.io/mef05g-rninjas/)
+### Final
+[R Ninjas Group Project](https://pjournal.github.io/mef05g-rninjas/)
+
+
