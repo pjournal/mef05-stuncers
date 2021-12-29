@@ -41,4 +41,5 @@ Check for code and more: [Click](https://www.r-bloggers.com/2012/03/futures-pric
  Cboe Volatility Indexes: [Click](https://www.projectoption.com/volatility-index-vxst-vix-vxv-vxmt/)
  
  
-
+### Week 1
+  [Assignment 1: RMarkdown](week1.html)
