@@ -1,0 +1,103 @@
+---
+title: "Netflix"
+author: "Suat Tuncer"
+output:
+  html_document: default
+---
+
+```{r, include = FALSE}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(knitr)
+library(scales)
+
+```
+### The Data
+df <- read_csv("C:\\Users\\suatk\\Desktop\\netflix_titles.csv")
+
+### Summarry of Data
+
+```{r, message = FALSE}
+
+str(df)
+
+```
+
+
+
+##### Selecting Neccesary Clomns
+
+
+```{r, message = FALSE}
+df_filtered <- df %>% select(type,title,director,cast,country,release_year,rating,duration,listed_in)
+df_filtered
+```
+
+##### Filtring Turkey
+
+```{r}
+df_tr <- df_filtered %>% subset(., grepl("Turkey", country))
+```
+
+##### Türlerin ayrıştırılması
+```{r}
+df_tr_plot <-  df_tr %>% 
+  mutate(listed_in = strsplit(as.character(listed_in), ",")) %>% 
+  unnest(listed_in) %>% select(listed_in) %>% group_by(list_in = trimws(listed_in)) %>% summarise(total = n())
+
+
+
+ggplot(df_tr_plot, aes(x = reorder(list_in, -total), y= total) ) +
+  geom_bar(stat='identity')+theme(axis.text.x = element_text(angle=45))
+```
+
+#### International Movies have most produced in Turkey in Netflix.
+
+
+
+
+
+
+
+
+### Filtring International Movies on Turkey
+
+```{r}
+int_movies<- df_tr%>%subset(., grepl("International Movies", listed_in))
+ 
+int_movies
+```
+
+
+#### Directors of International Movies
+```{r}
+df_int_plot <-  int_movies %>% 
+  mutate(director = strsplit(as.character(director), ",")) %>% 
+  unnest(director) %>% select(director) %>% group_by(director = trimws(director)) %>% summarise(total = n())
+
+
+
+ggplot(df_int_plot, aes (x = reorder(director, -total), y = total))+
+  geom_bar(stat='identity')+theme(axis.text.x = element_text(angle=45))
+```
+
+#### Actors and Actresses in International Movies
+
+```{r}
+df_int_cast_plot <-  int_movies %>% 
+  mutate(cast = strsplit(as.character(cast), ",")) %>% 
+  unnest(cast) %>% select(cast) %>% group_by(cast = trimws(cast)) %>% summarise(total = n())%>%arrange(desc(total))%>%head(20)
+
+df_int_cast_plot
+ggplot(df_int_cast_plot, aes (x = reorder(cast, -total), y = total))+
+  geom_bar(stat='identity')+theme(axis.text.x = element_text(angle=45))
+
+```
+
+
+###### Thanks for Reading
+
+###### You can go back to [main page](https://pjournal.github.io/mef05-stuncers/)
