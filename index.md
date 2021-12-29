@@ -1,5 +1,5 @@
 ---
-title: "RMarkdown Progress Journal"
+title: "Suat's PJ"
 author: "Suat Tuncer"
 output: html_document
 ---
